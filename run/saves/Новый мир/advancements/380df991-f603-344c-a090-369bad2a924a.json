@@ -1,0 +1,68 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-07-16 00:53:14 +0300"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:old_growth_birch_forest": "2025-07-16 01:29:38 +0300",
+      "minecraft:dark_forest": "2025-07-16 01:35:04 +0300",
+      "minecraft:forest": "2025-07-16 00:53:14 +0300",
+      "minecraft:cherry_grove": "2025-07-25 14:46:10 +0300",
+      "minecraft:river": "2025-07-25 14:46:13 +0300",
+      "minecraft:grove": "2025-07-16 01:35:56 +0300",
+      "minecraft:birch_forest": "2025-07-16 01:24:29 +0300",
+      "minecraft:stony_shore": "2025-07-16 00:53:23 +0300",
+      "minecraft:frozen_peaks": "2025-07-16 01:36:59 +0300",
+      "minecraft:plains": "2025-07-25 14:46:11 +0300",
+      "minecraft:jagged_peaks": "2025-07-16 01:36:01 +0300",
+      "minecraft:pale_garden": "2025-07-16 01:34:30 +0300"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2025-07-16 01:17:54 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2025-07-16 01:17:54 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2025-07-16 01:17:54 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/resin_block": {
+    "criteria": {
+      "has_resin_clump": "2025-07-16 01:35:36 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/resin_brick": {
+    "criteria": {
+      "has_resin_clump": "2025-07-16 01:35:36 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pale_oak_planks": {
+    "criteria": {
+      "has_log": "2025-07-16 01:35:43 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pale_oak_wood": {
+    "criteria": {
+      "has_log": "2025-07-16 01:35:43 +0300"
+    },
+    "done": true
+  },
+  "DataVersion": 4189
+}

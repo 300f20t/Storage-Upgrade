@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT License"
+
+[[mods]]
+modId="storage_upgrade"
+version="1.0.0"
+displayName="Storage Upgrade"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="300f20t, MCreator"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+
+# Start of user code block custom mixins
+# End of user code block custom mixins
+
+[[dependencies.storage_upgrade]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.4.137,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.storage_upgrade]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.4]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
