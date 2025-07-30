@@ -25,6 +25,7 @@ public class StorageTerminalGUIScreen extends AbstractContainerScreen<StorageTer
 	EditBox search_bar;
 	Button button_up;
 	Button button_down;
+	Button button_active_crafts;
 
 	public StorageTerminalGUIScreen(StorageTerminalGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -90,7 +91,7 @@ public class StorageTerminalGUIScreen extends AbstractContainerScreen<StorageTer
 	@Override
 	public void init() {
 		super.init();
-		search_bar = new EditBox(this.font, this.leftPos + 52, this.topPos + -28, 118, 18, Component.translatable("gui.storage_upgrade.storage_terminal_gui.search_bar"));
+		search_bar = new EditBox(this.font, this.leftPos + 43, this.topPos + -19, 118, 18, Component.translatable("gui.storage_upgrade.storage_terminal_gui.search_bar"));
 		search_bar.setMaxLength(8192);
 		search_bar.setResponder(content -> {
 			if (!menuStateUpdateActive)
@@ -98,10 +99,13 @@ public class StorageTerminalGUIScreen extends AbstractContainerScreen<StorageTer
 		});
 		this.addWidget(this.search_bar);
 		button_up = Button.builder(Component.translatable("gui.storage_upgrade.storage_terminal_gui.button_up"), e -> {
-		}).bounds(this.leftPos + 177, this.topPos + 7, 35, 20).build();
+		}).bounds(this.leftPos + 177, this.topPos + 43, 35, 20).build();
 		this.addRenderableWidget(button_up);
 		button_down = Button.builder(Component.translatable("gui.storage_upgrade.storage_terminal_gui.button_down"), e -> {
 		}).bounds(this.leftPos + 177, this.topPos + 61, 46, 20).build();
 		this.addRenderableWidget(button_down);
+		button_active_crafts = Button.builder(Component.translatable("gui.storage_upgrade.storage_terminal_gui.button_active_crafts"), e -> {
+		}).bounds(this.leftPos + 177, this.topPos + -20, 93, 20).build();
+		this.addRenderableWidget(button_active_crafts);
 	}
 }

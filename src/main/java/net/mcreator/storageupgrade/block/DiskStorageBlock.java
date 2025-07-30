@@ -16,7 +16,7 @@ public class DiskStorageBlock extends Block {
 	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
 
 	public DiskStorageBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(properties.sound(SoundType.GLASS).strength(1f, 10f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

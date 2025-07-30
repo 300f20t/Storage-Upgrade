@@ -19,7 +19,7 @@
           "width": 35,
           "height": 20,
           "x": 303,
-          "y": 44,
+          "y": 80,
           "locked": false
         }
       },
@@ -43,8 +43,8 @@
           "name": "search_bar",
           "width": 120,
           "height": 20,
-          "x": 177,
-          "y": 8,
+          "x": 168,
+          "y": 17,
           "locked": false
         }
       },
@@ -532,6 +532,19 @@
           "dropItemsWhenNotBound": true,
           "x": 276,
           "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_active_crafts",
+          "text": "Active Crafts",
+          "isUndecorated": false,
+          "width": 93,
+          "height": 20,
+          "x": 303,
+          "y": 17,
           "locked": false
         }
       }

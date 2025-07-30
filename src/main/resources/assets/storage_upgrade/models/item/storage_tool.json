@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "storage_upgrade:item/storage_tool"
+  }
+}

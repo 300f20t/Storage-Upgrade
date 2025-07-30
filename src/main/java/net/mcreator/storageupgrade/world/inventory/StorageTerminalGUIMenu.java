@@ -32,7 +32,7 @@ public class StorageTerminalGUIMenu extends AbstractContainerMenu implements Sto
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 40)
+			if (!this.containsKey(key) && this.size() >= 41)
 				return null;
 			return super.put(key, value);
 		}

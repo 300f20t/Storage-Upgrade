@@ -328,6 +328,21 @@
         ]
       },
       "path": "~/Items/CellComponents"
+    },
+    {
+      "name": "StorageTool",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_tool",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/items/storage_tool.json",
+          "src/main/java/net/mcreator/storageupgrade/item/StorageToolItem.java",
+          "src/main/resources/assets/storage_upgrade/models/item/storage_tool.json"
+        ]
+      },
+      "path": "~/Tools"
     }
   ],
   "variable_elements": [],
@@ -341,7 +356,11 @@
       "CUSTOM:LaserCable5",
       "CUSTOM:LaserCable6",
       "CUSTOM:LaserRouter",
-      "CUSTOM:StorageTerminal"
+      "CUSTOM:StorageTerminal",
+      "CUSTOM:DiskStorage"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:StorageTool"
     ]
   },
   "tab_element_order": {},
@@ -363,7 +382,9 @@
       "item_group.storage_upgrade.storage_upgrade_tab": "Storage Upgrade",
       "item.storage_upgrade.storage_component_1k": "Storage Component 1k",
       "item.storage_upgrade.storage_component_4k": "Storage Component 4k",
-      "item.storage_upgrade.storage_component_64k": "Storage Component 6 4k"
+      "item.storage_upgrade.storage_component_64k": "Storage Component 6 4k",
+      "gui.storage_upgrade.storage_terminal_gui.button_active_crafts": "Active Crafts",
+      "item.storage_upgrade.storage_tool": "Storage Tool"
     }
   },
   "metadata": {
@@ -415,6 +436,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Tools",
+        "children": []
       }
     ]
   },

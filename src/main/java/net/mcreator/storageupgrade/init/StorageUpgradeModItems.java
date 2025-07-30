@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.storageupgrade.item.StorageToolItem;
 import net.mcreator.storageupgrade.item.StorageComponent64kItem;
 import net.mcreator.storageupgrade.item.StorageComponent4kItem;
 import net.mcreator.storageupgrade.item.StorageComponent1kItem;
@@ -34,6 +35,7 @@ public class StorageUpgradeModItems {
 	public static final DeferredItem<Item> STORAGE_COMPONENT_1K = register("storage_component_1k", StorageComponent1kItem::new);
 	public static final DeferredItem<Item> STORAGE_COMPONENT_4K = register("storage_component_4k", StorageComponent4kItem::new);
 	public static final DeferredItem<Item> STORAGE_COMPONENT_64K = register("storage_component_64k", StorageComponent64kItem::new);
+	public static final DeferredItem<Item> STORAGE_TOOL = register("storage_tool", StorageToolItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

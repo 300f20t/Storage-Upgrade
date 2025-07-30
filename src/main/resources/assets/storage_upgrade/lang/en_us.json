@@ -15,5 +15,7 @@
   "item_group.storage_upgrade.storage_upgrade_tab": "Storage Upgrade",
   "item.storage_upgrade.storage_component_1k": "Storage Component 1k",
   "item.storage_upgrade.storage_component_4k": "Storage Component 4k",
-  "item.storage_upgrade.storage_component_64k": "Storage Component 6 4k"
+  "item.storage_upgrade.storage_component_64k": "Storage Component 6 4k",
+  "gui.storage_upgrade.storage_terminal_gui.button_active_crafts": "Active Crafts",
+  "item.storage_upgrade.storage_tool": "Storage Tool"
 }

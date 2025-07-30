@@ -24,5 +24,6 @@ public class StorageUpgradeModTabs {
 				tabData.accept(StorageUpgradeModItems.STORAGE_COMPONENT_1K.get());
 				tabData.accept(StorageUpgradeModItems.STORAGE_COMPONENT_4K.get());
 				tabData.accept(StorageUpgradeModItems.STORAGE_COMPONENT_64K.get());
+				tabData.accept(StorageUpgradeModItems.STORAGE_TOOL.get());
 			}).build());
 }
