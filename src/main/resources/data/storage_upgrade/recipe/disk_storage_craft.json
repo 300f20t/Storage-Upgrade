@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "aba"
+  ],
+  "key": {
+    "a": "storage_upgrade:carbon_fibers",
+    "b": "minecraft:iron_ingot",
+    "c": "storage_upgrade:laser_cable_1",
+    "d": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "storage_upgrade:disk_storage",
+    "count": 1
+  }
+}

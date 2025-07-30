@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bbb",
+    " a "
+  ],
+  "key": {
+    "a": "storage_upgrade:carbon_fibers",
+    "b": "minecraft:quartz"
+  },
+  "result": {
+    "id": "storage_upgrade:laser_cable_1",
+    "count": 8
+  }
+}

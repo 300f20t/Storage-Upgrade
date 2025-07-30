@@ -206,6 +206,73 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "DiskStorageCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disk_storage_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipe/disk_storage_craft.json"
+        ]
+      },
+      "path": "~/Crafts"
+    },
+    {
+      "name": "LaserCableCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_cable_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipe/laser_cable_craft.json"
+        ]
+      },
+      "path": "~/Crafts"
+    },
+    {
+      "name": "CarbonFibers",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carbon_fibers",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/items/carbon_fibers.json",
+          "src/main/java/net/mcreator/storageupgrade/item/CarbonFibersItem.java",
+          "src/main/resources/assets/storage_upgrade/models/item/carbon_fibers.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "StorageTerminalCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_terminal_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipe/storage_terminal_craft.json"
+        ]
+      },
+      "path": "~/Crafts"
+    },
+    {
+      "name": "CarbonFibersCraft",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carbon_fibers_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/recipe/carbon_fibers_craft.json"
+        ]
+      },
+      "path": "~/Crafts"
     }
   ],
   "variable_elements": [],
@@ -236,7 +303,8 @@
       "gui.storage_upgrade.storage_terminal_gui.button_down": "Down",
       "gui.storage_upgrade.storage_terminal_gui.button_up": "Up",
       "gui.storage_upgrade.storage_terminal_gui.search_bar": "",
-      "item.storage_upgrade.disk_storage": "Disk Storage"
+      "item.storage_upgrade.disk_storage": "Disk Storage",
+      "item.storage_upgrade.carbon_fibers": "Carbon Fibers"
     }
   },
   "metadata": {
@@ -275,6 +343,15 @@
       {
         "name": "Crafts",
         "children": []
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "CellComponents",
+            "children": []
+          }
+        ]
       }
     ]
   },

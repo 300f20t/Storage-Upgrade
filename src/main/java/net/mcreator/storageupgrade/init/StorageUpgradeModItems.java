@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.storageupgrade.item.CarbonFibersItem;
 import net.mcreator.storageupgrade.StorageUpgradeMod;
 
 import java.util.function.Function;
@@ -26,6 +27,7 @@ public class StorageUpgradeModItems {
 	public static final DeferredItem<Item> LASER_ROUTER = block(StorageUpgradeModBlocks.LASER_ROUTER);
 	public static final DeferredItem<Item> STORAGE_TERMINAL = block(StorageUpgradeModBlocks.STORAGE_TERMINAL);
 	public static final DeferredItem<Item> DISK_STORAGE = block(StorageUpgradeModBlocks.DISK_STORAGE);
+	public static final DeferredItem<Item> CARBON_FIBERS = register("carbon_fibers", CarbonFibersItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
