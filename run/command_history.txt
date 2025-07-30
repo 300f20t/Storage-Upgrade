@@ -1,1 +1,0 @@
-/give @a storage_upgrade:laser_cable_4
