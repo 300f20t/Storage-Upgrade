@@ -22,6 +22,8 @@ public class StorageUpgradeModItems {
 	public static final DeferredItem<Item> LASER_CABLE_3 = block(StorageUpgradeModBlocks.LASER_CABLE_3);
 	public static final DeferredItem<Item> LASER_CABLE_4 = block(StorageUpgradeModBlocks.LASER_CABLE_4);
 	public static final DeferredItem<Item> LASER_CABLE_5 = block(StorageUpgradeModBlocks.LASER_CABLE_5);
+	public static final DeferredItem<Item> LASER_CABLE_6 = block(StorageUpgradeModBlocks.LASER_CABLE_6);
+	public static final DeferredItem<Item> LASER_ROUTER = block(StorageUpgradeModBlocks.LASER_ROUTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

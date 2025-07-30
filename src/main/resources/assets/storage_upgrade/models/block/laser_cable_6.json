@@ -1,0 +1,9 @@
+{
+  "parent": "storage_upgrade:custom/laser_cable_6",
+  "textures": {
+    "all": "storage_upgrade:block/laser_cable_4_5_6",
+    "particle": "storage_upgrade:block/laser_router",
+    "0": "storage_upgrade:block/laser_cable_4_5_6"
+  },
+  "render_type": "solid"
+}

@@ -16,7 +16,7 @@
     "displayFluidOverlay": false,
     "animations": [],
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "laser_router",
     "blockSetType": "OAK",
     "tintType": "No tint",
     "isItemTinted": false,

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "storage_upgrade:block/laser_router"
+    }
+  }
+}

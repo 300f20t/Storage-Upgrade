@@ -1,7 +1,9 @@
 {
   "item.storage_upgrade.laser_cable_1": "Laser cable",
-  "item.storage_upgrade.laser_cable_2": "Laser Cable 2",
-  "item.storage_upgrade.laser_cable_3": "Laser Cable 3",
-  "item.storage_upgrade.laser_cable_4": "Laser Cable 4",
-  "item.storage_upgrade.laser_cable_5": "Laser Cable 5"
+  "item.storage_upgrade.laser_cable_2": "Laser cable",
+  "item.storage_upgrade.laser_cable_3": "Laser cable",
+  "item.storage_upgrade.laser_cable_4": "Laser cable",
+  "item.storage_upgrade.laser_cable_5": "Laser cable",
+  "item.storage_upgrade.laser_cable_6": "Laser cable",
+  "item.storage_upgrade.laser_router": "Laser Router"
 }

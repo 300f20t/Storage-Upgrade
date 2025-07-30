@@ -1,6 +1,6 @@
 {
   "workspacePanelIconSize": "TILES",
-  "workspacePanelSortType": "CREATED",
+  "workspacePanelSortType": "TYPE",
   "workspacePanelSortAscending": true,
   "projectBrowserSplitPos": 0,
   "projectBrowserState": {

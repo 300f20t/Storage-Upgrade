@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "laser_cable_4_5",
+    "texture": "laser_cable_4_5_6",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -16,7 +16,7 @@
     "displayFluidOverlay": false,
     "animations": [],
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "laser_router",
     "blockSetType": "OAK",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -117,7 +117,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Laser Cable 4",
+    "name": "Laser cable",
     "specialInformation": {
       "fixedValue": []
     },

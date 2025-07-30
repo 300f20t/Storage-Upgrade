@@ -8,11 +8,11 @@
       "registry_name": "laser_cable_1",
       "metadata": {
         "files": [
-          "src/main/resources/assets/storage_upgrade/items/laser_cable_1.json",
-          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_1.json",
-          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_1.json",
           "src/main/java/net/mcreator/storageupgrade/block/LaserCable1Block.java",
           "src/main/resources/assets/storage_upgrade/models/item/laser_cable_1.json",
+          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_1.json",
+          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_1.json",
+          "src/main/resources/assets/storage_upgrade/items/laser_cable_1.json",
           "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_1.json"
         ]
       },
@@ -26,12 +26,12 @@
       "registry_name": "laser_cable_2",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/storageupgrade/block/LaserCable2Block.java",
+          "src/main/resources/assets/storage_upgrade/items/laser_cable_2.json",
           "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_2.json",
           "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_2.json",
-          "src/main/resources/assets/storage_upgrade/models/item/laser_cable_2.json",
-          "src/main/resources/assets/storage_upgrade/items/laser_cable_2.json",
-          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_2.json"
+          "src/main/java/net/mcreator/storageupgrade/block/LaserCable2Block.java",
+          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_2.json",
+          "src/main/resources/assets/storage_upgrade/models/item/laser_cable_2.json"
         ]
       },
       "path": "~/Laser cables"
@@ -44,11 +44,11 @@
       "registry_name": "laser_cable_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/storage_upgrade/items/laser_cable_3.json",
           "src/main/resources/assets/storage_upgrade/models/item/laser_cable_3.json",
-          "src/main/java/net/mcreator/storageupgrade/block/LaserCable3Block.java",
-          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_3.json",
           "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_3.json",
+          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_3.json",
+          "src/main/java/net/mcreator/storageupgrade/block/LaserCable3Block.java",
+          "src/main/resources/assets/storage_upgrade/items/laser_cable_3.json",
           "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_3.json"
         ]
       },
@@ -62,12 +62,12 @@
       "registry_name": "laser_cable_4",
       "metadata": {
         "files": [
-          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_4.json",
-          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_4.json",
-          "src/main/resources/assets/storage_upgrade/items/laser_cable_4.json",
           "src/main/java/net/mcreator/storageupgrade/block/LaserCable4Block.java",
+          "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_4.json",
+          "src/main/resources/assets/storage_upgrade/items/laser_cable_4.json",
           "src/main/resources/assets/storage_upgrade/models/item/laser_cable_4.json",
-          "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_4.json"
+          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_4.json",
+          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_4.json"
         ]
       },
       "path": "~/Laser cables"
@@ -80,12 +80,12 @@
       "registry_name": "laser_cable_5",
       "metadata": {
         "files": [
-          "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_5.json",
-          "src/main/resources/assets/storage_upgrade/models/item/laser_cable_5.json",
-          "src/main/resources/assets/storage_upgrade/items/laser_cable_5.json",
-          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_5.json",
           "src/main/resources/assets/storage_upgrade/models/block/laser_cable_5.json",
-          "src/main/java/net/mcreator/storageupgrade/block/LaserCable5Block.java"
+          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_5.json",
+          "src/main/resources/assets/storage_upgrade/items/laser_cable_5.json",
+          "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_5.json",
+          "src/main/java/net/mcreator/storageupgrade/block/LaserCable5Block.java",
+          "src/main/resources/assets/storage_upgrade/models/item/laser_cable_5.json"
         ]
       },
       "path": "~/Laser cables"
@@ -120,6 +120,42 @@
         ]
       },
       "path": "~/Laser cables"
+    },
+    {
+      "name": "LaserCable6",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_cable_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/block/LaserCable6Block.java",
+          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_6.json",
+          "src/main/resources/assets/storage_upgrade/models/block/laser_cable_6.json",
+          "src/main/resources/assets/storage_upgrade/items/laser_cable_6.json",
+          "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_6.json",
+          "src/main/resources/assets/storage_upgrade/models/item/laser_cable_6.json"
+        ]
+      },
+      "path": "~/Laser cables"
+    },
+    {
+      "name": "LaserRouter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_router",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/models/item/laser_router.json",
+          "src/main/resources/assets/storage_upgrade/models/block/laser_router.json",
+          "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_router.json",
+          "src/main/resources/assets/storage_upgrade/blockstates/laser_router.json",
+          "src/main/java/net/mcreator/storageupgrade/block/LaserRouterBlock.java",
+          "src/main/resources/assets/storage_upgrade/items/laser_router.json"
+        ]
+      },
+      "path": "~/Laser cables"
     }
   ],
   "variable_elements": [],
@@ -130,24 +166,28 @@
       "CUSTOM:LaserCable2",
       "CUSTOM:LaserCable3",
       "CUSTOM:LaserCable4",
-      "CUSTOM:LaserCable5"
+      "CUSTOM:LaserCable5",
+      "CUSTOM:LaserCable6",
+      "CUSTOM:LaserRouter"
     ]
   },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "item.storage_upgrade.laser_cable_1": "Laser cable",
-      "item.storage_upgrade.laser_cable_2": "Laser Cable 2",
-      "item.storage_upgrade.laser_cable_3": "Laser Cable 3",
-      "item.storage_upgrade.laser_cable_4": "Laser Cable 4",
-      "item.storage_upgrade.laser_cable_5": "Laser Cable 5"
+      "item.storage_upgrade.laser_cable_2": "Laser cable",
+      "item.storage_upgrade.laser_cable_3": "Laser cable",
+      "item.storage_upgrade.laser_cable_4": "Laser cable",
+      "item.storage_upgrade.laser_cable_5": "Laser cable",
+      "item.storage_upgrade.laser_cable_6": "Laser cable",
+      "item.storage_upgrade.laser_router": "Laser Router"
     }
   },
   "metadata": {
     "files": [
       "src/main/resources/pack.mcmeta",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/storageupgrade/StorageUpgradeMod.java",
       "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModBlocks.java",
       "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModItems.java"

@@ -4,7 +4,6 @@ import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.resources.ResourceLocation;
@@ -26,17 +25,17 @@ public class ConnectingCablesProcedure {
 		if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(ResourceLocation.parse("storage_upgrade:part_of_storage")))) {
 			wireDirections.add(Direction.WEST);
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("storage_upgrade:part_of_storage")))) {
-			wireDirections.add(Direction.UP);
-		}
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("storage_upgrade:part_of_storage")))) {
-			wireDirections.add(Direction.DOWN);
-		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("storage_upgrade:part_of_storage")))) {
 			wireDirections.add(Direction.SOUTH);
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(ResourceLocation.parse("storage_upgrade:part_of_storage")))) {
 			wireDirections.add(Direction.NORTH);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("storage_upgrade:part_of_storage")))) {
+			wireDirections.add(Direction.UP);
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("storage_upgrade:part_of_storage")))) {
+			wireDirections.add(Direction.DOWN);
 		}
 		if (0 == wireDirections.size()) {
 			{
@@ -189,7 +188,7 @@ public class ConnectingCablesProcedure {
 						world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-			} else if ((wireDirections.get(0) instanceof Direction _d ? _d : Direction.UP) == (((wireDirections.get(1) instanceof Direction _d ? _d : Direction.UP).getOpposite()).getClockWise(Direction.Axis.Y))) {
+			} else if ((wireDirections.get(0) instanceof Direction _d ? _d : Direction.UP) == ((wireDirections.get(1) instanceof Direction _d ? _d : Direction.UP).getCounterClockWise(Direction.Axis.Y))) {
 				{
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = StorageUpgradeModBlocks.LASER_CABLE_5.get().defaultBlockState();
@@ -229,7 +228,7 @@ public class ConnectingCablesProcedure {
 						world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-			} else if ((wireDirections.get(0) instanceof Direction _d ? _d : Direction.UP) == Direction.DOWN) {
+			} else if (wireDirections.contains(Direction.DOWN)) {
 				{
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = StorageUpgradeModBlocks.LASER_CABLE_4.get().defaultBlockState();
@@ -260,7 +259,7 @@ public class ConnectingCablesProcedure {
 					}
 				}
 				{
-					Direction _dir = ((wireDirections.get(1) instanceof Direction _d ? _d : Direction.UP).getOpposite());
+					Direction _dir = (wireDirections.get(0) instanceof Direction _d ? _d : Direction.UP);
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -269,10 +268,10 @@ public class ConnectingCablesProcedure {
 						world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
 				}
-			} else if ((wireDirections.get(0) instanceof Direction _d ? _d : Direction.UP) == Direction.UP) {
+			} else if (wireDirections.contains(Direction.UP)) {
 				{
 					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockState _bs = StorageUpgradeModBlocks.LASER_CABLE_4.get().defaultBlockState();
+					BlockState _bs = StorageUpgradeModBlocks.LASER_CABLE_6.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Property<?> _propertyOld : _bso.getProperties()) {
 						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
@@ -300,7 +299,7 @@ public class ConnectingCablesProcedure {
 					}
 				}
 				{
-					Direction _dir = (wireDirections.get(1) instanceof Direction _d ? _d : Direction.UP);
+					Direction _dir = (wireDirections.get(0) instanceof Direction _d ? _d : Direction.UP);
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("facing") instanceof EnumProperty _dp && _dp.getPossibleValues().contains(_dir)) {
@@ -313,7 +312,7 @@ public class ConnectingCablesProcedure {
 		} else if (3 == wireDirections.size()) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = Blocks.RAW_GOLD_BLOCK.defaultBlockState();
+				BlockState _bs = StorageUpgradeModBlocks.LASER_ROUTER.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Property<?> _propertyOld : _bso.getProperties()) {
 					Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
@@ -328,7 +327,7 @@ public class ConnectingCablesProcedure {
 		} else if (4 == wireDirections.size()) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = Blocks.RAW_GOLD_BLOCK.defaultBlockState();
+				BlockState _bs = StorageUpgradeModBlocks.LASER_ROUTER.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Property<?> _propertyOld : _bso.getProperties()) {
 					Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
@@ -343,7 +342,7 @@ public class ConnectingCablesProcedure {
 		} else if (5 == wireDirections.size()) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = Blocks.RAW_GOLD_BLOCK.defaultBlockState();
+				BlockState _bs = StorageUpgradeModBlocks.LASER_ROUTER.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Property<?> _propertyOld : _bso.getProperties()) {
 					Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
@@ -358,7 +357,7 @@ public class ConnectingCablesProcedure {
 		} else if (6 == wireDirections.size()) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
-				BlockState _bs = Blocks.RAW_GOLD_BLOCK.defaultBlockState();
+				BlockState _bs = StorageUpgradeModBlocks.LASER_ROUTER.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Property<?> _propertyOld : _bso.getProperties()) {
 					Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());

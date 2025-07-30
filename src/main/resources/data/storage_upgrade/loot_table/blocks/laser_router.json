@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "storage_upgrade:blocks/laser_router",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "storage_upgrade:laser_cable_1"
+        }
+      ]
+    }
+  ]
+}
