@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "carbon_fibers",
+    "texture": "storage_component_64k",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
-    "name": "Carbon Fibers",
+    "name": "Storage Component 6 4k",
     "rarity": "COMMON",
     "creativeTabs": [
       {

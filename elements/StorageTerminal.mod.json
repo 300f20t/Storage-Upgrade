@@ -48,7 +48,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:StorageUpgradeTab"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""

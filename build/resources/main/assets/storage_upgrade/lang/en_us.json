@@ -11,5 +11,6 @@
   "gui.storage_upgrade.storage_terminal_gui.button_up": "Up",
   "gui.storage_upgrade.storage_terminal_gui.search_bar": "",
   "item.storage_upgrade.disk_storage": "Disk Storage",
-  "item.storage_upgrade.carbon_fibers": "Carbon Fibers"
+  "item.storage_upgrade.carbon_fibers": "Carbon Fibers",
+  "item_group.storage_upgrade.storage_upgrade_tab": "Storage Upgrade"
 }

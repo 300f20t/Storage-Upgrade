@@ -11,6 +11,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.storageupgrade.item.StorageComponent64kItem;
+import net.mcreator.storageupgrade.item.StorageComponent4kItem;
+import net.mcreator.storageupgrade.item.StorageComponent1kItem;
 import net.mcreator.storageupgrade.item.CarbonFibersItem;
 import net.mcreator.storageupgrade.StorageUpgradeMod;
 
@@ -28,6 +31,9 @@ public class StorageUpgradeModItems {
 	public static final DeferredItem<Item> STORAGE_TERMINAL = block(StorageUpgradeModBlocks.STORAGE_TERMINAL);
 	public static final DeferredItem<Item> DISK_STORAGE = block(StorageUpgradeModBlocks.DISK_STORAGE);
 	public static final DeferredItem<Item> CARBON_FIBERS = register("carbon_fibers", CarbonFibersItem::new);
+	public static final DeferredItem<Item> STORAGE_COMPONENT_1K = register("storage_component_1k", StorageComponent1kItem::new);
+	public static final DeferredItem<Item> STORAGE_COMPONENT_4K = register("storage_component_4k", StorageComponent4kItem::new);
+	public static final DeferredItem<Item> STORAGE_COMPONENT_64K = register("storage_component_64k", StorageComponent64kItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

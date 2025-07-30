@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
@@ -28,7 +28,7 @@ import net.mcreator.storageupgrade.init.StorageUpgradeModBlocks;
 import javax.annotation.Nullable;
 
 public class LaserCable3Block extends Block {
-	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
+	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
 
 	public LaserCable3Block(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.GLASS).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -57,6 +57,8 @@ public class LaserCable3Block extends Block {
 			case NORTH -> box(6, 6, 0, 10, 10, 16);
 			case EAST -> box(0, 6, 6, 16, 10, 10);
 			case WEST -> box(0, 6, 6, 16, 10, 10);
+			case UP -> box(6, 0, 6, 10, 16, 10);
+			case DOWN -> box(6, 0, 6, 10, 16, 10);
 		};
 	}
 
@@ -68,7 +70,7 @@ public class LaserCable3Block extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
+		return super.getStateForPlacement(context).setValue(FACING, context.getNearestLookingDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

@@ -50,7 +50,7 @@
     "immuneToFire": false,
     "creativeTabs": [
       {
-        "value": "TRANSPORTATION"
+        "value": "CUSTOM:StorageUpgradeTab"
       }
     ],
     "destroyTool": "Not specified",
