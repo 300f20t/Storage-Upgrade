@@ -16,7 +16,7 @@
           "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_1.json"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
     },
     {
       "name": "LaserCable2",
@@ -34,7 +34,7 @@
           "src/main/resources/assets/storage_upgrade/models/item/laser_cable_2.json"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
     },
     {
       "name": "LaserCable3",
@@ -52,7 +52,7 @@
           "src/main/resources/assets/storage_upgrade/blockstates/laser_cable_3.json"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
     },
     {
       "name": "LaserCable4",
@@ -70,7 +70,7 @@
           "src/main/resources/data/storage_upgrade/loot_table/blocks/laser_cable_4.json"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
     },
     {
       "name": "LaserCable5",
@@ -88,7 +88,7 @@
           "src/main/resources/assets/storage_upgrade/models/item/laser_cable_5.json"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
     },
     {
       "name": "ConnectingCables",
@@ -119,7 +119,7 @@
           "src/main/java/net/mcreator/storageupgrade/procedures/ConnectingCablesProcedure.java"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
     },
     {
       "name": "LaserCable6",
@@ -137,7 +137,7 @@
           "src/main/resources/assets/storage_upgrade/models/item/laser_cable_6.json"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
     },
     {
       "name": "LaserRouter",
@@ -155,7 +155,57 @@
           "src/main/resources/assets/storage_upgrade/items/laser_router.json"
         ]
       },
-      "path": "~/Laser cables"
+      "path": "~/Blocks/Laser cables"
+    },
+    {
+      "name": "StorageTerminal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_terminal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/storage_upgrade/blockstates/storage_terminal.json",
+          "src/main/java/net/mcreator/storageupgrade/block/StorageTerminalBlock.java",
+          "src/main/resources/assets/storage_upgrade/items/storage_terminal.json",
+          "src/main/resources/assets/storage_upgrade/models/block/storage_terminal.json",
+          "src/main/resources/assets/storage_upgrade/models/item/storage_terminal.json",
+          "src/main/resources/data/storage_upgrade/loot_table/blocks/storage_terminal.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "StorageTerminalGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "storage_terminal_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/storageupgrade/client/gui/StorageTerminalGUIScreen.java",
+          "src/main/java/net/mcreator/storageupgrade/world/inventory/StorageTerminalGUIMenu.java"
+        ]
+      },
+      "path": "~/GUIs"
+    },
+    {
+      "name": "DiskStorage",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disk_storage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/storage_upgrade/loot_table/blocks/disk_storage.json",
+          "src/main/resources/assets/storage_upgrade/models/item/disk_storage.json",
+          "src/main/java/net/mcreator/storageupgrade/block/DiskStorageBlock.java",
+          "src/main/resources/assets/storage_upgrade/blockstates/disk_storage.json",
+          "src/main/resources/assets/storage_upgrade/items/disk_storage.json",
+          "src/main/resources/assets/storage_upgrade/models/block/disk_storage.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
@@ -168,7 +218,8 @@
       "CUSTOM:LaserCable4",
       "CUSTOM:LaserCable5",
       "CUSTOM:LaserCable6",
-      "CUSTOM:LaserRouter"
+      "CUSTOM:LaserRouter",
+      "CUSTOM:StorageTerminal"
     ]
   },
   "tab_element_order": {},
@@ -180,7 +231,12 @@
       "item.storage_upgrade.laser_cable_4": "Laser cable",
       "item.storage_upgrade.laser_cable_5": "Laser cable",
       "item.storage_upgrade.laser_cable_6": "Laser cable",
-      "item.storage_upgrade.laser_router": "Laser Router"
+      "item.storage_upgrade.laser_router": "Laser Router",
+      "item.storage_upgrade.storage_terminal": "Storage terminal",
+      "gui.storage_upgrade.storage_terminal_gui.button_down": "Down",
+      "gui.storage_upgrade.storage_terminal_gui.button_up": "Up",
+      "gui.storage_upgrade.storage_terminal_gui.search_bar": "",
+      "item.storage_upgrade.disk_storage": "Disk Storage"
     }
   },
   "metadata": {
@@ -189,6 +245,9 @@
       "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModTabs.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/storageupgrade/StorageUpgradeMod.java",
+      "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModScreens.java",
+      "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModMenus.java",
+      "src/main/java/net/mcreator/storageupgrade/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModBlocks.java",
       "src/main/java/net/mcreator/storageupgrade/init/StorageUpgradeModItems.java"
     ]
@@ -197,11 +256,24 @@
     "name": "~",
     "children": [
       {
-        "name": "Laser cables",
+        "name": "Debug",
         "children": []
       },
       {
-        "name": "Debug",
+        "name": "GUIs",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Laser cables",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Crafts",
         "children": []
       }
     ]

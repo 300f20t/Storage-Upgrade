@@ -11,20 +11,24 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.DirectionalBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.storageupgrade.procedures.ConnectingCablesProcedure;
+import net.mcreator.storageupgrade.init.StorageUpgradeModBlocks;
 
 import javax.annotation.Nullable;
 
 public class LaserCable5Block extends Block {
-	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public LaserCable5Block(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.GLASS).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -57,10 +61,6 @@ public class LaserCable5Block extends Block {
 					box(6, 9, 7, 7, 10, 16), box(9, 9, 10, 10, 10, 16));
 			case WEST -> Shapes.or(box(0, 7, 7, 9, 9, 9), box(7, 7, 0, 9, 9, 7), box(0, 6, 6, 7, 7, 7), box(0, 9, 6, 7, 10, 7), box(0, 9, 9, 10, 10, 10), box(0, 6, 9, 10, 7, 10), box(6, 6, 0, 7, 7, 6), box(9, 6, 0, 10, 7, 9), box(9, 9, 0, 10, 10, 9),
 					box(6, 9, 0, 7, 10, 6));
-			case UP -> Shapes.or(box(7, 7, 7, 9, 16, 9), box(9, 7, 7, 16, 9, 9), box(9, 9, 6, 10, 16, 7), box(9, 9, 9, 10, 16, 10), box(6, 6, 9, 7, 16, 10), box(6, 6, 6, 7, 16, 7), box(10, 9, 6, 16, 10, 7), box(7, 6, 6, 16, 7, 7),
-					box(7, 6, 9, 16, 7, 10), box(10, 9, 9, 16, 10, 10));
-			case DOWN -> Shapes.or(box(7, 0, 7, 9, 9, 9), box(9, 7, 7, 16, 9, 9), box(9, 0, 9, 10, 7, 10), box(9, 0, 6, 10, 7, 7), box(6, 0, 6, 7, 10, 7), box(6, 0, 9, 7, 10, 10), box(10, 6, 9, 16, 7, 10), box(7, 9, 9, 16, 10, 10),
-					box(7, 9, 6, 16, 10, 7), box(10, 6, 6, 16, 7, 7));
 		};
 	}
 
@@ -72,7 +72,7 @@ public class LaserCable5Block extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getNearestLookingDirection().getOpposite());
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -81,6 +81,11 @@ public class LaserCable5Block extends Block {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+	}
+
+	@Override
+	public ItemStack getCloneItemStack(LevelReader world, BlockPos pos, BlockState state, boolean includeData, Player entity) {
+		return new ItemStack(StorageUpgradeModBlocks.LASER_CABLE_1.get());
 	}
 
 	@Override

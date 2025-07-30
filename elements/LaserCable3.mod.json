@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "laser_cable_3:default",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -26,47 +26,11 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 7.0,
-        "my": 7.0,
-        "mz": 0.0,
-        "Mx": 9.0,
-        "My": 9.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
         "mx": 6.0,
         "my": 6.0,
         "mz": 0.0,
-        "Mx": 7.0,
-        "My": 7.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 6.0,
-        "my": 9.0,
-        "mz": 0.0,
-        "Mx": 7.0,
-        "My": 10.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 9.0,
-        "my": 9.0,
-        "mz": 0.0,
         "Mx": 10.0,
         "My": 10.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 9.0,
-        "my": 6.0,
-        "mz": 0.0,
-        "Mx": 10.0,
-        "My": 7.0,
         "Mz": 16.0,
         "subtract": false
       }
@@ -106,7 +70,7 @@
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:LaserCable1"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

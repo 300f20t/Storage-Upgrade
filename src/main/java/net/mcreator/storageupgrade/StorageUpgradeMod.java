@@ -19,6 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.storageupgrade.init.StorageUpgradeModTabs;
+import net.mcreator.storageupgrade.init.StorageUpgradeModMenus;
 import net.mcreator.storageupgrade.init.StorageUpgradeModItems;
 import net.mcreator.storageupgrade.init.StorageUpgradeModBlocks;
 
@@ -45,6 +46,8 @@ public class StorageUpgradeMod {
 		StorageUpgradeModItems.REGISTRY.register(modEventBus);
 
 		StorageUpgradeModTabs.REGISTRY.register(modEventBus);
+
+		StorageUpgradeModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

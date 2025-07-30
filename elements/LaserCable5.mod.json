@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "laser_cable_5:default",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -151,7 +151,7 @@
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:LaserCable1"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

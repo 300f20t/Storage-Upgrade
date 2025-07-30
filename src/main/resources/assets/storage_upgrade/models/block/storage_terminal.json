@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "storage_upgrade:block/laser_router",
+    "up": "storage_upgrade:block/laser_router",
+    "north": "storage_upgrade:block/storage_terminal",
+    "east": "storage_upgrade:block/laser_router",
+    "south": "storage_upgrade:block/laser_router",
+    "west": "storage_upgrade:block/laser_router",
+    "particle": "storage_upgrade:block/laser_router"
+  },
+  "render_type": "solid"
+}

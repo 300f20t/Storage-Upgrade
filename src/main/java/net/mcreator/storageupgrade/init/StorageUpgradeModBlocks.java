@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.storageupgrade.block.StorageTerminalBlock;
 import net.mcreator.storageupgrade.block.LaserRouterBlock;
 import net.mcreator.storageupgrade.block.LaserCable6Block;
 import net.mcreator.storageupgrade.block.LaserCable5Block;
@@ -16,6 +17,7 @@ import net.mcreator.storageupgrade.block.LaserCable4Block;
 import net.mcreator.storageupgrade.block.LaserCable3Block;
 import net.mcreator.storageupgrade.block.LaserCable2Block;
 import net.mcreator.storageupgrade.block.LaserCable1Block;
+import net.mcreator.storageupgrade.block.DiskStorageBlock;
 import net.mcreator.storageupgrade.StorageUpgradeMod;
 
 import java.util.function.Function;
@@ -29,6 +31,8 @@ public class StorageUpgradeModBlocks {
 	public static final DeferredBlock<Block> LASER_CABLE_5 = register("laser_cable_5", LaserCable5Block::new);
 	public static final DeferredBlock<Block> LASER_CABLE_6 = register("laser_cable_6", LaserCable6Block::new);
 	public static final DeferredBlock<Block> LASER_ROUTER = register("laser_router", LaserRouterBlock::new);
+	public static final DeferredBlock<Block> STORAGE_TERMINAL = register("storage_terminal", StorageTerminalBlock::new);
+	public static final DeferredBlock<Block> DISK_STORAGE = register("disk_storage", DiskStorageBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

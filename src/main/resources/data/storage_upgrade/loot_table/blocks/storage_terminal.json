@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "storage_upgrade:blocks/storage_terminal",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "storage_upgrade:storage_terminal"
+        }
+      ]
+    }
+  ]
+}

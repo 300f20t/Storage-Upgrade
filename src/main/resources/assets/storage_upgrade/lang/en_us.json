@@ -5,5 +5,10 @@
   "item.storage_upgrade.laser_cable_4": "Laser cable",
   "item.storage_upgrade.laser_cable_5": "Laser cable",
   "item.storage_upgrade.laser_cable_6": "Laser cable",
-  "item.storage_upgrade.laser_router": "Laser Router"
+  "item.storage_upgrade.laser_router": "Laser Router",
+  "item.storage_upgrade.storage_terminal": "Storage terminal",
+  "gui.storage_upgrade.storage_terminal_gui.button_down": "Down",
+  "gui.storage_upgrade.storage_terminal_gui.button_up": "Up",
+  "gui.storage_upgrade.storage_terminal_gui.search_bar": "",
+  "item.storage_upgrade.disk_storage": "Disk Storage"
 }

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "storage_upgrade:block/disk_storage"
+    },
+    "facing=east": {
+      "model": "storage_upgrade:block/disk_storage",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "storage_upgrade:block/disk_storage",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "storage_upgrade:block/disk_storage",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "storage_upgrade:block/disk_storage",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "storage_upgrade:block/disk_storage",
+      "x": 90
+    }
+  }
+}
